@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--==================== FAVICON ====================-->
+  <link rel="icon" href="IsmaStorelogo.png" />
+  <!--========== BOX ICONS LIBRARY ==========-->
+  <!-- <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+  <--========== CSS ==========-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles1.css" />
+  <!--========== Title ==========-->
+  <title>Isma Store</title>
+
+  
+</head>
+
+<body>
+  <!--========== SCROLL TOP ==========-->
+  <a href="#" class="scrollTop show-scroll" id="scroll-top">
+    <i class="bx bx-chevron-up scrollTop_icon"></i>
+  </a>
+
+  <!--========== HEADER ==========-->
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <a href="/" class="nav_logo">
+        <b>
+          Isma
+          <span>Store</span>
+        </b>
+      </a>
+
+      <div class="nav_menu" id="nav-menu">
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="#home" class="nav_link">Home</a>
+          </li>
+          <li class="nav_item">
+            <a href="#about" class="nav_link">About Us</a>
+          </li>
+          <li class="nav_item">
+            <a href="#services" class="nav_link">Category</a>
+          </li>
+          <li class="nav_item">
+            <a href="#items" class="nav_link">Product</a>
+          </li>
+          <li class="hidden_item">
+            <a href="#app" class="nav_link">App</a>
+          </li>
+          <li class="nav_item">
+            <a href="#contact" class="nav_link">Contact Us</a>
+          </li>
+
+          <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
+        </ul>
+      </div>
+
+      <div class="nav_toggle" id="nav-toggle">
+        <!--When clicked activate the class "opened"
+          to the button tag as well to the 4 SVG lines-->
+        <button class="menu" aria-label="Abrir Menu"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
+
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <!--========== HOME ==========-->
+    <section class="home" id="home">
+      <div class="home_container bd-container bd-grid">
+        <div class="home_data">
+          <h1 class="home_title">Quality Product</h1>
+          <h2 class="home_subtitle">Choose your outfit from our wide range of products </h2>
+          <a href="#items" class="button">Buy Now</a>
+        </div>
+
+        <img src="f1.jpg" alt="choose outfit" class="home_img" />
+      </div>
+    </section>
+
+    <!--========== ABOUT ==========-->
+    <section class="about section bd-container" id="about">
+      <div class="about_container bd-grid">
+        <div class="about_data">
+          <span class="section-subtitle about_initial">About Us</span>
+          <h2 class="section-title about_initial">
+            Experience the best of New Fashion!
+          </h2>
+          <p class="about_description">
+            With just a few taps on the screen, and with the Isma standard of
+            quality, we connect you with the best fashion in current time! 😎
+          </p>
+          <a href="#app" class="button">Did you like it? See now!</a>
+        </div>
+
+        <img src="f2.jpg" alt="boy fashion" class="about_img" />
+      </div>
+    </section>
+
+    <!--========== SERVICES ==========-->
+    <section class="services section bd-container" id="services">
+      <span class="section-subtitle">We Offer For You</span>
+      <h2 class="section-title">Choose Category</h2>
+
+      <div class="services_container bd-grid">
+        <div class="services_content">
+          <img src="electronics.jpeg" alt="electronics">
+          <h3 class="services_title">Electronics</h3>
+          <p class="services_description">
+            Wide range of electronics items!
+          </p>
+        </div>
+
+        <div class="services_content">
+          <img src="clothes.jpg" alt=" clothes">
+
+          <h3 class="services_title">Clothes</h3>
+          <p class="services_description">
+            Different kind of clothings for men and women!
+          </p>
+        </div>
+
+        <div class="services_content">
+          <img src="grocerry.jpg" alt="grocery">
+
+          <h3 class="services_title">Grocery</h3>
+          <p class="services_description">
+            Buy your daily needs here!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--========== Items ==========-->
+    <section class="items section bd-container" id="items">
+      <span class="section-subtitle">The Best</span>
+      <h2 class="section-title">Trending of the weeks</h2>
+
+      <div class="items_container bd-grid">
+        <div class="items_content">
+          <img src="p1.jpg" alt="" class="items_img" />
+          <h3 class="items_name">Jeans</h3>
+          <span class="items_detail">Fit jeans for men</span>
+          <span class="items_price">Rs 999.00</span>
+
+          <a href="#" class="button items_button">
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+          </a>
+        </div>
+
+        <div class="items_content">
+          <img src="p2.jpg" alt="" class="items_img" />
+          <h3 class="items_name">Printed T-Shirt</h3>
+          <span class="items_detail">Half Sleeve white t-shirt</span>
+          <span class="items_price">Rs 390.00</span>
+
+          <a href="#" class="button items_button">
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+          </a>
+        </div>
+
+        <div class="items_content">
+          <img src="p3.jpg" alt="" class="items_img" />
+          <h3 class="items_name">Girl's Jeans</h3>
+          <span class="items_detail">Well bottom loose grey jeans</span>
+          <span class="items_price">Rs 1199.00</span>
+
+          <a href="#" class="button items_button">
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+          </a>
+        </div>
+
+        <div class="items_content">
+          <img src="p4.jpg" alt="" class="items_img" />
+          <h3 class="items_name">Fancy kurti</h3>
+          <span class="items_detail">Kurti and Pajama for girls and women</span>
+          <span class="items_price">Rs 1599.00</span>
+
+          <a href="#" class="button items_button">
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+          </a>
+        </div>
+
+        <div class="items_content">
+          <img src="p5.jpg" alt="" class="items_img" />
+          <h3 class="items_name">Shoes</h3>
+          <span class="items_detail">Formal Shoes</span>
+          <span class="items_price">Rs 1999.00</span>
+
+          <a href="#" class="button items_button">
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+          </a>
+        </div>
+
+        <div class="items_content">
+          <img src="p6.jpg" alt="" class="items_img" />
+          <h3 class="items_name">Earphone</h3>
+          <span class="items_detail">Neckband black earphone</span>
+          <span class="items_price">Rs 899.00</span>
+
+          <a href="#" class="button items_button">
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+          </a>
+        </div>
+
+        <div class="items_content">
+          <img src="p7.jpg" alt="" class="items_img" />
+          <h3 class="items_name">I Phone 15</h3>
+          <span class="items_detail">Ram-12 GB, Memory-256 GB</span>
+          <span class="items_price">Rs 126999.00</span>
+
+          <a href="#" class="button items_button">
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+          </a>
+        </div>
+
+        <div class="items_content">
+          <img src="p8.jpg" alt="" class="items_img" />
+          <h3 class="items_name">Maggi</h3>
+          <span class="items_detail">4 packets, each of 70gm</span>
+          <span class="items_price">Rs 49.00</span>
+
+          <a href="#" class="button items_button">
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+          </a>
+        </div>
+
+        <div class="items_content">
+          <img src="p9.jpg" alt="" class="items_img" />
+          <h3 class="items_name">Kurta Pajama</h3>
+          <span class="items_detail">Eid special kurta pajam for boys</span>
+          <span class="items_price">Rs 799.00</span>
+
+          <a href="#" class="button items_button">
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!--===== APP =======-->
+    <section class="app section bd-container" id="app">
+      <div class="app_container bd-grid">
+        <div class="app_data">
+          <span class="section-subtitle app_initial">Start now!</span>
+          <h2 class="section-title app_initial">Install Our App</h2>
+          <p class="app_description">
+            Just click below, install the app and place your orders
+            easy and intuitive way!
+          </p>
+          <div class="app_stores">
+            <a href="#"><img src="assets/img/playStoreDownload.png" alt="" class="app_store" /></a>
+            <a href="#"><img src="assets/img/appStoreDownload.svg" alt="" class="app_store" /></a>
+          </div>
+        </div>
+
+        <img src="assets/img/movil-app.png" alt="" class="app_img" />
+      </div>
+    </section>
+
+    <!--========== CONTACT US ==========-->
+    <section class="contact section bd-container" id="contact">
+      <div class="contact_container bd-grid">
+        <div class="contact_data">
+          <span class="section-subtitle contact_initial">Let's talk?</span>
+          <h2 class="section-title contact_initial">Contact Us</h2>
+          <p class="contact_description">
+            Need some help using the app? View your orders
+            or more details and options about our services, contact us
+            now! We are online 24 hours a day, from Monday to Sunday! 😉
+          </p>
+        </div>
+
+        <div class="contact_button">
+          <a href="#" class="button">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--========== FOOTER ==========-->
+  <footer class="footer section bd-container">
+    <div class="footer_container bd-grid">
+      <div class="footer_content">
+        <b class="footer_logo">
+          Isma
+          <span>Store</span>
+        </b>
+
+        <span class="footer_description">The best services for you. </span>
+
+        <div>
+          <a href="#" class="footer_social"><i class="fa-brands fa-instagram" style="color: #a92d33;"></i></a>
+          <a href="#" class="footer_social"><i class="fa-brands fa-facebook" style="color: #1b0de3;"></i></a>
+          <a href="#" class="footer_social"><i class="fa-brands fa-twitter" style="color: #6094e6;"></i></a>
+        </div>
+      </div>
+
+      <div class="footer_content">
+        <h3 class="footer_title">Information</h3>
+        <ul>
+          <li><a href="#" class="footer_link">Events</a></li>
+          <li><a href="#" class="footer_link">Privacy Policy</a></li>
+          <li><a href="#" class="footer_link">Service Terms</a></li>
+        </ul>
+      </div>
+
+      <div class="footer_content">
+        <h3 class="footer_title">Address</h3>
+        <ul>
+          <li>05, Nagaliya Qasamganj</li>
+          <li>Tanda, Rampur-244927</li>
+          <li>Uttar pradesh, INDIA</li>
+        </ul>
+      </div>
+
+      <div class="footer_content">
+        <h3 class="footer_title">Navigation</h3>
+        <ul>
+          <li><a href="#app" class="footer_link">Download</a></li>
+          <li><a href="#contact" class="footer_link">Contact Us</a></li>
+          <li><a href="#items" class="footer_link">Trending of the Week</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer_copy">
+      &#169; Made in 2024, by
+      Mohd Ismaeel
+      </a>
+    </p>
+  </footer>
+
+  <!--========== SCROLL REVEAL LIBRARY ==========-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--========== MAIN JS ==========-->
+  <script src=" main.js"></script>
+</body>
+
+</html>
